@@ -265,7 +265,7 @@ function buildAlreadyRegisteredEmbed(slotData, scrimName, store) {
       `<a:emoji_14:1544290922043543552> **Team** — ${slotData.team}\n` +
       `🪙 **Group** — ${groupDisplayName(slotData.group)}\n` +
       `<a:450144discord:1547663739443220541> **Assigned Slot** — ${localSlotNumber(slotData.slotNumber)}\n` +
-      `<:55163calendar:1547681328223223858> **Scrim** — ${scrimName}\n` +
+      `<:4321bgmi:1547674231498612837> **Scrim** — ${scrimName}\n` +
       `<a:1037776333327052890:1547681613901471836> **Players** — ${lineup}\n\n` +
       `${matchScheduleLines(slotData.group, store)}`
     )
@@ -290,7 +290,7 @@ function buildPublicRegistrationEmbed(data, ownerId, slotNumber, group, scrimNam
       `<:591324redneonownercrown:1547675533649645678> **Owner** — <@${ownerId}>\n` +
       `🪙 **Group** — ${groupDisplayName(group)}\n` +
       `<:559950clipboard:1547663749488312421> **Assigned Slot** — ${localSlotNumber(slotNumber)}\n` +
-      `<:55163calendar:1547681328223223858> **Scrim** — ${scrimName}\n` +
+      `<:4321bgmi:1547674231498612837> **Scrim** — ${scrimName}\n` +
       `<a:450144discord:1547663739443220541> **Playing Lineup** — ${lineup}\n\n` +
       `${matchScheduleLines(group, store)}\n\n` +
       'Please wait for the slot list to be posted.'
@@ -336,8 +336,8 @@ function buildPrivateRegistrationEmbed(profile, ownerId, slotNumber, group, scri
       `📌 **GROUP**\n${groupDisplayName(group)}\n\n` +
       `🔵 **SLOT**\nSLOT ${localSlotNumber(slotNumber)}\n\n` +
       `━━━━━━━━━━━━━━\n\n` +
-      `📅 **MATCH DATE**\n${matchDateLine}\n\n` +
-      `🗓️ **MATCH SCHEDULE**\n${matchScheduleBlock}\n\n` +
+      `<:55163calendar:1547681328223223858> **MATCH DATE**\n${matchDateLine}\n\n` +
+      `<:55163calendar:1547681328223223858> **MATCH SCHEDULE**\n${matchScheduleBlock}\n\n` +
       `━━━━━━━━━━━━━━\n\n` +
       `🧑‍🤝‍🧑 **PLAYERS**\n${playerLines}\n\n` +
       `━━━━━━━━━━━━━━\n\n` +
