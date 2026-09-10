@@ -350,20 +350,20 @@ function resolveGroupSchedule(letter, store) {
 function matchScheduleLines(letter, store) {
   const resolved = resolveGroupSchedule(letter, store);
   if (!resolved) {
-    return "⏰ **Match Schedule** — not set yet for this group, check pinned messages or ask an admin.";
+    return "<a:465d796358514e49874201ce90ea2ce1:1547673912605671444> **Match Schedule** — not set yet for this group, check pinned messages or ask an admin.";
   }
 
   const { dayLabel, dateLabel, matchesToShow } = resolved;
 
   const lines = matchesToShow
-    .map((m, i) => `⏰ **Match ${i + 1}** — IDP ${m.idp} PM | Start ${m.start} PM | ${m.map}`)
+    .map((m, i) => `<a:465d796358514e49874201ce90ea2ce1:1547673912605671444> **Match ${i + 1}** — IDP ${m.idp} PM | Start ${m.start} PM | ${m.map}`)
     .join('\n');
 
   // dayLabel is only "Today"/"Tomorrow" for the next two calendar days —
   // beyond that it already equals dateLabel (both the full weekday+date),
   // so showing both would print the same date twice.
   const heading = dayLabel === dateLabel ? dateLabel : `${dayLabel}, ${dateLabel}`;
-  return `📅 **${heading}**\n${lines}`;
+  return `<:55163calendar:1547681328223223858> **${heading}**\n${lines}`;
 }
 
 // Short one-line match-time summary for a group, used as select-menu
