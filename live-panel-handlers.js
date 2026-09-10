@@ -10,9 +10,9 @@ const { buildGroupAdminPanelRows } = require('./group-admin-panel');
 function fillCircle(filled, capacity) {
   if (capacity <= 0) return '⚪';
   const pct = filled / capacity;
-  if (pct >= 1) return '<a:emoji_198:1546394323996909610>';
-  if (pct >= 0.9) return '<a:emoji_199:1546397349910417428>';
-  return '<a:emoji_197:1546394268166262835>';
+  if (pct >= 1) return '<a:836435400498741289:1547663764466180220>';
+  if (pct >= 0.9) return '<a:1015007788390416414:1547663721537609849>';
+  return '<a:885679180799422574:1547663768702689280>';
 }
 
 function dotsBar(filled, capacity) {
@@ -55,7 +55,7 @@ function buildLiveGroupsPanel(store) {
   // heads-up date, not something registration logic depends on.
   const { relative, dateLabel } = dayLabelForBatch(scrim, dayBatchForLetter(letters[0]));
 
-  embed.setDescription(`🗓 **${relative}, ${dateLabel}**\nRegistration never closes — keep registering.`);
+  embed.setDescription(`<:55163calendar:1547681328223223858> **${relative}, ${dateLabel}**\nRegistration never closes — keep registering.`);
 
   for (const letter of letters) {
     const { start, end } = slotRangeForGroup(letter, scrim.totalSlots);
@@ -72,7 +72,7 @@ function buildLiveGroupsPanel(store) {
 
     embed.addFields({
       name: `${fillCircle(filled, capacity)} ${groupDisplayName(letter)} (${groupDate})`,
-      value: `🕐 ${scheduleLine}\n${dotsBar(filled, capacity)} ${filled}/${capacity} filled`,
+      value: `<a:465d796358514e49874201ce90ea2ce1:1547673912605671444> ${scheduleLine}\n${dotsBar(filled, capacity)} ${filled}/${capacity} filled`,
     });
   }
 
