@@ -926,7 +926,7 @@ async function handleUseOldTeamContinue(interaction) {
     .addOptions(options);
 
   await interaction.update({
-    content: `📅 **${relative}, ${dateLabel}** — pick the group (match time) you'd like to play in:`,
+    content: `<:55163calendar:1547681328223223858> **${relative}, ${dateLabel}** — pick the group (match time) you'd like to play in:`,
     embeds: [],
     components: [new ActionRowBuilder().addComponents(menu)],
   });
