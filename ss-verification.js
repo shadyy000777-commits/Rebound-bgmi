@@ -18,7 +18,7 @@ const VISION_MODEL = process.env.GEMINI_VISION_MODEL || 'gemini-3.6-flash';
 // image independently, and the exact-duplicate hash check below runs
 // BEFORE any AI call as a first line of defense against reusing one
 // screenshot for multiple slots.
-const REQUIRED_SCREENSHOT_COUNT = 3;
+const REQUIRED_SCREENSHOT_COUNT = 4;
 
 // Only these get sent off to the vision model — random file attachments
 // (zip, txt, etc.) in the channel are ignored rather than misread as "no
