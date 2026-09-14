@@ -23,12 +23,12 @@ function buildVerifyPanelPayload() {
     new ButtonBuilder()
       .setCustomId('verify_start')
       .setLabel('Verify')
-      .setEmoji('✅')
+      .setEmoji('<a:452028tick:1547663744979574955>')
       .setStyle(ButtonStyle.Success),
     new ButtonBuilder()
       .setCustomId('verify_edit_start')
       .setLabel('Edit')
-      .setEmoji('✏️')
+      .setEmoji('<:dc992fea7ae84f43b24df2e52282cf6f:1549067424685490186>')
       .setStyle(ButtonStyle.Secondary)
   );
 
