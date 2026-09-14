@@ -47,15 +47,15 @@ function buildAdminPanelPayload(store) {
     .setColor(0x5865F2)
     .setDescription('Configure verification, registration, roles and channels — all from here.')
     .addFields(
-      { name: '📋 Verify Channel', value: ch(s.verifyLogChannelId), inline: true },
-      { name: '🔒 Private Verify Channel', value: ch(s.privateVerifyLogChannelId), inline: true },
-      { name: '🎫 Verify Role', value: role(s.verifiedRoleId), inline: true },
-      { name: '📥 Register Channel', value: ch(s.registrationLogChannelId), inline: true },
-      { name: '🔒 Private Register Channel', value: ch(s.privateRegistrationLogChannelId), inline: true },
-      { name: '🎫 Register Role', value: role(s.registeredRoleId), inline: true },
-      { name: '🌟 Result Role', value: role(s.resultRoleId), inline: true },
-      { name: '✏️ Verify Confirmation Msg', value: msg(s.verifyConfirmationMessage), inline: true },
-      { name: '✏️ Register Confirmation Msg', value: msg(s.registerConfirmationMessage), inline: true },
+      { name: '<a:5abed936fdc14d2a8c1a48a1329a4cc0:1549067426912534599> Verify Channel', value: ch(s.verifyLogChannelId), inline: true },
+      { name: '<:3409locked:1547663730786177095> Private Verify Channel', value: ch(s.privateVerifyLogChannelId), inline: true },
+      { name: '<:431007ticketicon:1549098276702134362> Verify Role', value: role(s.verifiedRoleId), inline: true },
+      { name: '<:86258satellite:1549098274114379867> Register Channel', value: ch(s.registrationLogChannelId), inline: true },
+      { name: '<:3409locked:1547663730786177095> Private Register Channel', value: ch(s.privateRegistrationLogChannelId), inline: true },
+      { name: '<:431007ticketicon:1549098276702134362> Register Role', value: role(s.registeredRoleId), inline: true },
+      { name: '<:445259bluestarshiny:1549098279063658647> Result Role', value: role(s.resultRoleId), inline: true },
+      { name: '<:dc992fea7ae84f43b24df2e52282cf6f:1549067424685490186> Verify Confirmation Msg', value: msg(s.verifyConfirmationMessage), inline: true },
+      { name: '<:dc992fea7ae84f43b24df2e52282cf6f:1549067424685490186> Register Confirmation Msg', value: msg(s.registerConfirmationMessage), inline: true },
     )
     .setFooter({ text: 'Only you can see this panel.' });
 
