@@ -20,7 +20,7 @@ const VISION_MODEL = process.env.GROQ_VISION_MODEL || 'qwen/qwen3.6-27b';
 // eyeball "these two look like the same screenshot" across images
 // anymore; that job now falls entirely to the exact-duplicate hash check
 // below, which is why that check runs BEFORE any AI calls are made.
-const REQUIRED_SCREENSHOT_COUNT = 4;
+const REQUIRED_SCREENSHOT_COUNT = 3;
 
 // Only these get sent off to the vision model — random file attachments
 // (zip, txt, etc.) in the channel are ignored rather than misread as "no
