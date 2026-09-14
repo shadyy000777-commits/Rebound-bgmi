@@ -171,15 +171,15 @@ function buildTournamentRegisterPanelPayload(tournament) {
   );
 
   const embed = new EmbedBuilder()
-    .setTitle(`🥇 ${tournament.name} — Team Registration`)
+    .setTitle(`<a:30348trophyfixed:1549099959364878436> ${tournament.name} — Team Registration`)
     .setColor(tournament.open ? 0x57F287 : 0xED4245)
     .setDescription(
       tournament.open
         ? 'Click **Register Team** below, enter your team name, then mention your teammates. You\'ll be auto-assigned to whichever group still has room.'
-        : '🔒 Registration is currently closed.'
+        : '<:3409locked:1547663730786177095> Registration is currently closed.'
     )
     .addFields(
-      { name: 'Status', value: tournament.open ? '🟢 Open' : '🔴 Closed', inline: true },
+      { name: 'Status', value: tournament.open ? '<a:885679180799422574:1547663768702689280> Open' : '<a:836435400498741289:1547663764466180220> Closed', inline: true },
       { name: 'Slots Filled', value: Number.isFinite(maxCapacity) ? `${teamCount}/${maxCapacity}` : String(teamCount), inline: true },
     );
 
