@@ -890,7 +890,7 @@ async function handleTournamentWizardButton(interaction) {
       .setPlaceholder('Choose the slot-manager channel')
       .addChannelTypes(ChannelType.GuildText);
     return interaction.reply({
-      content: '📡 Pick a channel — published slot lists will be posted there.',
+      content: '<:86258satellite:1549098274114379867> Pick a channel — published slot lists will be posted there.',
       components: [new ActionRowBuilder().addComponents(select)],
       flags: MessageFlags.Ephemeral,
     });
@@ -1221,8 +1221,8 @@ async function handleTournamentWizardButton(interaction) {
     const payload = buildTournamentWizardPayload(store);
     return interaction.update({
       content: cleanupFailures
-        ? `🗑️ Tournament deleted. ⚠️ ${cleanupFailures} group channel/role(s) couldn't be removed automatically — check the bot's permissions.`
-        : '🗑️ Tournament deleted, along with all group channels, categories, and roles.',
+        ? `<:87359bfafa644a3eb261954886ea14d2:1549067429110616255> Tournament deleted. ⚠️ ${cleanupFailures} group channel/role(s) couldn't be removed automatically — check the bot's permissions.`
+        : '<:87359bfafa644a3eb261954886ea14d2:1549067429110616255> Tournament deleted, along with all group channels, categories, and roles.',
       ...payload,
     });
   }
@@ -1667,7 +1667,7 @@ async function handleTourneyRegConfirm(interaction) {
     content: null,
     embeds: [
       new EmbedBuilder()
-        .setTitle('🎯 Registration Complete!')
+        .setTitle('<:53678verified:1547663747240165517> Registration Complete!')
         .setColor(0x57F287)
         .setDescription(
           `**Team** — ${team}\n` +
@@ -2473,7 +2473,7 @@ function buildCancelGroupSelectPayload(tournament) {
     })));
 
   const embed = new EmbedBuilder()
-    .setTitle('🗑️ Cancel Slots')
+    .setTitle('<:87359bfafa644a3eb261954886ea14d2:1549067429110616255> Cancel Slots')
     .setColor(0xED4245)
     .setDescription('Pick a group, then choose which team(s) to remove.');
 
@@ -2603,7 +2603,7 @@ function findUserTournamentEntry(tournament, userId) {
 // an admin.
 function buildSlotSelfServicePanelPayload() {
   const embed = new EmbedBuilder()
-    .setTitle('🎯 Tourney Slot Manager')
+    .setTitle('<a:30348trophyfixed:1549099959364878436> Tourney Slot Manager')
     .setColor(0x5865F2)
     .setDescription(
       '• Click **Cancel My Slot** below to cancel your slot.\n' +
